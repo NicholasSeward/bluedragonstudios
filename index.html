@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blue Dragon Studios is a newly incorporated nonprofit art studio in Hot Springs, Arkansas."
+    />
+    <title>Blue Dragon Studios | Hot Springs, AR</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Blue Dragon Studios home">
+        <img src="logo.svg" alt="" class="brand-logo" />
+        <span>Blue Dragon Studios</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#board">Board</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-reveal" id="home">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <img src="logo.svg" alt="Blue Dragon Studios dragon logo" class="hero-logo" />
+          <p class="eyebrow">Newly incorporated nonprofit</p>
+          <h1>Blue Dragon Studios</h1>
+          <p class="hero-tagline">A nonprofit art studio in Hot Springs, Arkansas.</p>
+          <p class="hero-copy">
+            We are building a creative home for local artists, families, and neighbors to
+            connect through art.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#donate">Donate</a>
+            <a class="button button-secondary" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-reveal" id="about">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Art, creativity, and community.</h2>
+          </div>
+          <div class="panel">
+            <p>
+              Blue Dragon Studios is a newly incorporated nonprofit dedicated to supporting
+              art, creativity, and community in Hot Springs, Arkansas.
+            </p>
+            <p>
+              We are starting small and building toward a space where local artists,
+              families, and neighbors can gather, create, learn, and grow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-reveal" id="board">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Board</p>
+            <h2>Founding board</h2>
+            <p>Early board information can be updated as names and roles are finalized.</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>President</h3>
+              <p>Board member name</p>
+              <span>Founder / Leadership</span>
+            </article>
+            <article class="card">
+              <h3>Executive Director</h3>
+              <p>Board member name</p>
+              <span>Day-to-Day Operations</span>
+            </article>
+            <article class="card">
+              <h3>Treasurer</h3>
+              <p>Board member name</p>
+              <span>Finance / Stewardship</span>
+            </article>
+            <article class="card">
+              <h3>Secretary</h3>
+              <p>Board member name</p>
+              <span>Records / Communication</span>
+            </article>
+            <article class="card">
+              <h3>Board Member</h3>
+              <p>Board member name</p>
+              <span>Community / Support</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-reveal" id="donate">
+        <div class="container">
+          <div class="donate-panel">
+            <p class="eyebrow">Donate</p>
+            <h2>Help us build the foundation.</h2>
+            <p>
+              Donations will help us recoup the cost of incorporation and put us on our way
+              to support creative projects, purchase supplies, and build our foundation in
+              the community.
+            </p>
+            <div class="donate-actions" aria-label="Donation email contacts">
+              <a
+                class="button button-primary"
+                href="mailto:president@bluedragonstudios.org?subject=Donation%20Inquiry"
+              >
+                Email President
+              </a>
+              <a
+                class="button button-secondary"
+                href="mailto:director@bluedragonstudios.org?subject=Donation%20Inquiry"
+              >
+                Email Executive Director
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-reveal" id="contact">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Get in touch.</h2>
+            <p class="muted">
+              Based in Hot Springs, Arkansas. For donations, questions, or early support,
+              email the President or Executive Director directly.
+            </p>
+          </div>
+
+          <div class="contact-links" aria-label="Leadership email contacts">
+            <a class="contact-card" href="mailto:president@bluedragonstudios.org">
+              <span>President</span>
+              <strong>president@bluedragonstudios.org</strong>
+            </a>
+            <a class="contact-card" href="mailto:director@bluedragonstudios.org">
+              <span>Executive Director</span>
+              <strong>director@bluedragonstudios.org</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> Blue Dragon Studios. Hot Springs, Arkansas.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
