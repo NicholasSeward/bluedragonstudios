@@ -75,7 +75,7 @@ Suggested copy:
 - Text: white and soft gray.
 - Cards: dark charcoal with thin blue border.
 - Buttons: blue with soft glow.
-- SVG logo can use a subtle blue drop shadow or glow in the hero.
+- SVG logo is clean by default and grows slightly on hover.
 - Feel: clean, modern, slightly dramatic, not busy.
 
 CSS colors:
@@ -120,15 +120,17 @@ Needed JavaScript:
 - Smooth scroll navigation.
 - Mobile menu open/close.
 - Fade-in sections as the user scrolls.
-- Contact form placeholder alert until real form handling is added.
 
 ## File Plan
 
 ```text
-index.html
-styles.css
-script.js
-logo.svg
+webroot/
+  CNAME
+  index.html
+  styles.css
+  script.js
+  logo.svg
+.github/workflows/pages.yml
 ```
 
 ## First Build
