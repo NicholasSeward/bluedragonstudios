@@ -98,7 +98,6 @@ textarea {
   width: 2.35rem;
   height: 2.35rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 5px rgba(0, 174, 255, 0.32));
 }
 
 .site-nav {
@@ -165,24 +164,7 @@ textarea {
 }
 
 .hero-glow {
-  position: absolute;
-  width: min(30rem, 72vw);
-  height: min(30rem, 72vw);
-  background:
-    radial-gradient(circle, rgba(0, 174, 255, 0.16), transparent 42%),
-    conic-gradient(
-      from 90deg,
-      transparent,
-      rgba(0, 174, 255, 0.2),
-      transparent,
-      rgba(0, 0, 255, 0.14),
-      transparent
-    );
-  border-radius: 50%;
-  filter: blur(4px);
-  opacity: 0.72;
-  animation: dragon-aura 12s linear infinite;
-  z-index: -1;
+  display: none;
 }
 
 .hero-content {
@@ -194,15 +176,15 @@ textarea {
 .hero-logo {
   width: min(28rem, 82vw);
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 9px rgba(0, 174, 255, 0.35));
+  filter: none;
   transform-origin: center;
-  animation: dragon-rise 900ms ease-out both, dragon-float 6s ease-in-out 1s infinite;
+  transition: transform 180ms ease;
   will-change: transform;
 }
 
-.hero-logo:hover {
-  animation-play-state: running;
-  filter: drop-shadow(0 0 14px rgba(0, 174, 255, 0.5));
+.hero-logo:hover,
+.hero-logo:focus-visible {
+  transform: scale(1.04);
 }
 
 .eyebrow {
@@ -460,44 +442,6 @@ h3 {
 .section-reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-@keyframes dragon-rise {
-  from {
-    opacity: 0;
-    transform: translateY(1rem) scale(0.96);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes dragon-float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-0.7rem) rotate(-0.7deg);
-  }
-}
-
-@keyframes dragon-aura {
-  from {
-    transform: rotate(0deg) scale(0.98);
-  }
-
-  50% {
-    opacity: 0.48;
-    transform: rotate(180deg) scale(1.04);
-  }
-
-  to {
-    transform: rotate(360deg) scale(0.98);
-  }
 }
 
 @media (max-width: 860px) {
